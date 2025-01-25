@@ -4,6 +4,7 @@ import useFetchApi from './hooks/useCrudApi'
 import Users from './components/Users'
 import useCrud from './hooks/useCrud'
 import './App.css'
+import Loader from './components/loader'
 
 const baseUrl = 'https://users-crud-api-production-9c59.up.railway.app/api/v1'
 
@@ -67,7 +68,7 @@ function App() {
         <br />
         <br />
         <div className="row justify-content-md-center gap-lg-5 m-sm-4">
-          {pending ? <p>Loading...</p> : data && <Users handleEdit={handleEdit} users={data} remove={remove}/>}
+          {pending ? <Loader/> : data && <Users handleEdit={handleEdit} users={data} remove={remove}/>}
         </div>
       </main>
     </>
