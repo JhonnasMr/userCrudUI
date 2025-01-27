@@ -8,3 +8,7 @@
     width: 100vw;
     min-height: 100vh;
 }
+
+body {
+    background-color: #e4e4e4;
+}

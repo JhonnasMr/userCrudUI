@@ -76,7 +76,7 @@ function HookForm({add, update, userEdit, setUserEdit}) {
               },
               pattern: {
                 value: /^(?=.*[A-Z])[A-Za-z\d]{8,}$/,
-                message: 'Minimum 5 characters, at least one uppercase letter, one lowercase letter and one number.'
+                message: 'Minimum 8 characters, at least one uppercase letter, one lowercase letter and one number.'
               }
             })}
             className="form-control"/>
